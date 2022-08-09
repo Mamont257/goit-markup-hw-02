@@ -1,0 +1,105 @@
+/* Основний колір логотипу - #000000 */
+/* Допоміжний колір логотипу - #2196F3 */
+/* Основний колір шрифту - #212121 */
+/* Допоміжний колір шрифту - #757575 */
+
+/* Основний колір фону - #F5F5F5 */
+/* Допоміжний колір - #F5F4FA */
+/* Колір футера - #2F303A */
+
+
+:root {
+    --logo-blue: #2196F3;
+    --logo-black: #000000;
+    --global-color: #F5F5F5;
+    --secong-color: #F5F4FA;
+    --futter-color: #2F303A;
+    --text-color: #212121;
+    --second-text-color: #757575;
+    --text-color-while: #ffffff;
+
+}
+
+body {
+    background-color: var(--global-color);
+}
+
+
+
+/* Header */
+
+.logo {
+    color: var(--logo-black);
+}
+
+.logo .logo-icon {
+    color: var(--logo-blue);
+}
+
+.list-nav a {
+    color: var(--text-color);
+}
+
+.list-nav a:hover,
+.list-nav a:focus {
+    color: var(--logo-blue);
+}
+
+.list-contact a {
+    color: var(--second-text-color);
+}
+
+.list-contact a:hover,
+.list-contact a:focus {
+    color: var(--logo-blue);
+}
+
+
+
+/* Бдок героя */
+
+.hero {
+    background-color: var(--futter-color);
+}
+
+.hero h1{
+    color: var(--text-color-while);
+}
+
+.hero .btn {
+    background-color: var(--logo-blue);
+    color: var(--text-color-while);
+}
+
+
+
+/* Наші переваги */
+
+.list-best,
+.title {
+    color: var(--text-color)
+}
+
+.list-best,
+.second-text {
+    color: var(--second-text-color);
+}
+
+
+
+/* Футер */
+
+.logo.footer-logo {
+    color: var(--text-color-while);
+}
+
+.footer {
+    background-color: var(--futter-color);
+}
+.adress{
+    color: var(--text-color-while);
+}
+
+.list-contact-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
