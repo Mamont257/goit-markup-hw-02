@@ -11,7 +11,7 @@
 :root {
     --logo-blue: #2196F3;
     --logo-black: #000000;
-    --global-color: #F5F5F5;
+    --global-color: #ffffff;
     --secong-color: #F5F4FA;
     --futter-color: #2F303A;
     --text-color: #212121;
@@ -31,6 +31,19 @@
     list-style: none;
 }
 
+.hide {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 
 
 body {
@@ -45,6 +58,7 @@ body {
 .logo {
     color: var(--logo-black);
     font-family: var(--secondary-font);
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -54,9 +68,6 @@ body {
     color: var(--logo-blue);
 }
 
-menu {
-    background-color: #ECECEC;
-}
 
 .menu-link {
     font-weight: 500;
@@ -112,10 +123,16 @@ menu {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    font-family: inherit;
 
     background-color: var(--logo-blue);
     color: var(--text-color-while);
     cursor: pointer
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #188CE8;
 }
 
 
@@ -133,13 +150,13 @@ menu {
 }
 
 .about-us-text {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 
     color: var(--second-text-color);
 }
+
 
 
 
@@ -188,7 +205,6 @@ menu {
 }
 
 .team-job {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -215,7 +231,6 @@ menu {
 
 
 .footer-adress{
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -224,12 +239,72 @@ menu {
     color: var(--text-color-while);
 }
 
+.footer-adress:hover,
+.footer-adress:focus {
+    color: var(--logo-blue);
+}
+
 .footer-contact {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;
 
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contact:hover,
+.footer-contact:focus {
+    color: var(--logo-blue);
+}
+
+
+
+
+
+
+/* =========== Сторінка портфоліо ========== */
+
+
+
+/* Блок навігації */
+
+.nav-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+
+    background-color: var(--secong-color);
+    color: var(--text-color);
+    cursor: pointer
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+    background-color: var(--logo-blue);
+    color: var(--text-color-while);
+}
+
+
+
+/* Блок перелік макетів */
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--text-color);
+}
+
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+
+    color: var(--second-text-color);
 }
